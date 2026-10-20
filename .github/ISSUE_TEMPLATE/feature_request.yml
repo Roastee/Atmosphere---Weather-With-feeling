@@ -1,0 +1,48 @@
+name: Feature request
+description: Suggest an improvement to the weather workspace.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve the project. Please focus on the user problem and expected outcome rather than a specific implementation.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: What user need, workflow, or limitation would this address?
+      placeholder: As a user, I need ... because ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the behavior or experience you would like to see.
+      placeholder: The workspace could ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: What other approaches or workarounds have you tried?
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add examples, screenshots, accessibility considerations, or links that help explain the request. Do not include secrets or personal data.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and did not find a duplicate.
+          required: true
